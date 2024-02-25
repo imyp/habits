@@ -1,0 +1,58 @@
+.activitycontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.activityselector {
+  color: #fff;
+  background: none;
+  transition: 200ms;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.activityinput {
+  color: #fff;
+  background: none;
+  transition: 200ms;
+  border-radius: 10px;
+  font-size: 40px;
+  width: 18ch;
+}
+
+.activityoption {
+  color: #000;
+  background: #555;
+  transition: 100ms;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.activitybutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 0;
+  border: 0;
+  background: #333;
+  color: #ccc;
+  transition: 200ms;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.activitybutton:hover {
+  background: #444;
+  color: #fff;
+}
+
+.activitybutton:active {
+  scale: 0.95;
+  background: #555;
+}

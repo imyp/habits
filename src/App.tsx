@@ -43,13 +43,19 @@ function App() {
     setActivityData({ ...activityData, [activity]: newData });
   };
   return (
-    <div>
-      <Year year={year} setYear={setYear} />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <Activity
         current={activity}
         activities={Object.keys(activityData)}
         setActivity={setActivity}
       />
+      <Year year={year} setYear={setYear} />
       <DoneContext.Provider value={setDone}>
         <YearDisplay days={daysData} />
       </DoneContext.Provider>
